@@ -154,11 +154,11 @@ export function ForecastPanel({
   }
 
   return (
-    <section style={{ border: "1px solid black", padding: 16 }}>
-      <h2 style={{ margin: "0 0 12px", fontSize: 16 }}>Forecast · {symbol}</h2>
+    <section className="panel p-4 flex flex-col h-full">
+      <div className="text-[13px] font-medium text-foreground mb-4">Forecast · {symbol}</div>
 
-      <div style={{ display: "grid", gap: 12 }}>
-        <label style={{ display: "grid", gap: 6 }}>
+      <div className="flex flex-col gap-4 flex-1">
+        <label className="flex flex-col gap-2 text-[12px] text-muted-strong">
           <span>Center ({formatHr(forecastCenter)})</span>
           <input
             type="range"
@@ -170,7 +170,7 @@ export function ForecastPanel({
           />
         </label>
 
-        <label style={{ display: "grid", gap: 6 }}>
+        <label className="flex flex-col gap-2 text-[12px] text-muted-strong">
           <span>Band ±{formatHr(forecastBand)}</span>
           <input
             type="range"
@@ -183,32 +183,30 @@ export function ForecastPanel({
         </label>
 
         <div>
-          <p style={{ margin: "0 0 8px" }}>Stake</p>
-          <div style={{ display: "flex", gap: 8 }}>
+          <p className="text-[12px] text-muted-strong mb-2">Stake</p>
+          <div className="flex gap-2">
             {STAKE_PRESETS.map((amount) => (
               <button
                 key={amount}
                 type="button"
                 onClick={() => onStakeChange(amount)}
-                style={{
-                  border: "1px solid black",
-                  background: stakeUsd === amount ? "black" : "white",
-                  color: stakeUsd === amount ? "white" : "black",
-                  padding: "6px 12px",
-                  cursor: "pointer",
-                }}
+                className={`px-3 py-1.5 rounded-lg text-[12px] transition-colors ${
+                  stakeUsd === amount
+                    ? "text-accent bg-[var(--accent-soft)] border border-[rgba(60,224,107,0.35)]"
+                    : "text-muted-strong border border-[var(--border)] hover:text-accent"
+                }`}
               >
                 ${amount}
               </button>
             ))}
           </div>
           {isConnected ? (
-            <p style={{ margin: "8px 0 0", fontSize: 12 }}>Balance: {formatUsd(usdcAvailable)}</p>
+            <p className="text-[11px] text-muted mt-2">Balance: {formatUsd(usdcAvailable)}</p>
           ) : null}
         </div>
 
-        <div style={{ borderTop: "1px solid black", paddingTop: 12, display: "grid", gap: 4 }}>
-          <span>Implied odds: {impliedOddsLabel(oddsBps)}</span>
+        <div className="border-t border-[var(--border)] pt-3 flex flex-col gap-1 text-[12px] text-muted-strong">
+          <span>Implied odds: <span className="text-accent">{impliedOddsLabel(oddsBps)}</span></span>
           <span>Est. payout: {formatUsd(payout)}</span>
           <span>
             Range: {formatHr(forecastCenter - forecastBand)} – {formatHr(forecastCenter + forecastBand)}
@@ -219,13 +217,7 @@ export function ForecastPanel({
           type="button"
           disabled={!isConnected || lockedOut}
           onClick={handleLock}
-          style={{
-            border: "1px solid black",
-            background: !isConnected || lockedOut ? "#eee" : "white",
-            color: !isConnected || lockedOut ? "#666" : "black",
-            padding: "10px 12px",
-            cursor: !isConnected || lockedOut ? "not-allowed" : "pointer",
-          }}
+          className="btn-accent w-full py-2.5 text-[13px] mt-auto"
         >
           {!isConnected
             ? "Connect wallet to lock"
@@ -237,12 +229,17 @@ export function ForecastPanel({
         </button>
 
         {status ? (
-          <p style={{ margin: 0, fontSize: 12 }}>
+          <p className="text-[11px] text-muted m-0">
             {status}
             {lastTxHash ? (
               <>
                 {" · "}
-                <a href={arcscanTx(lastTxHash)} target="_blank" rel="noreferrer" style={{ color: "black" }}>
+                <a
+                  href={arcscanTx(lastTxHash)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-accent hover:underline"
+                >
                   tx
                 </a>
               </>

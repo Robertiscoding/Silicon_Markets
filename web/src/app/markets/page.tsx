@@ -6,7 +6,7 @@ export default async function MarketsPage() {
   const series = await loadMarketSeries();
 
   return (
-    <main style={{ padding: 24 }}>
+    <main className="flex-1 px-5 lg:px-8 pb-8 pt-1">
       <MarketsView initialSeries={series} settlementTs={configuredSettlementTs()} />
     </main>
   );

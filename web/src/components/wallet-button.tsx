@@ -16,8 +16,8 @@ export function WalletButton() {
 
   const balance = usdc ? rawToUsdc(usdc.value) : 0;
   const label = isConnected
-    ? `$${balance.toLocaleString(undefined, { maximumFractionDigits: 2 })} USDC`
-    : "Connect";
+    ? `$${balance.toLocaleString(undefined, { maximumFractionDigits: 0 })} USDC`
+    : "Connect Wallet";
 
   function onClick() {
     if (isConnected) {
@@ -32,17 +32,10 @@ export function WalletButton() {
     <button
       type="button"
       onClick={onClick}
-      title={address ?? "Connect wallet"}
-      style={{
-        border: "1px solid black",
-        background: isConnected ? "black" : "white",
-        color: isConnected ? "white" : "black",
-        padding: "6px 12px",
-        cursor: "pointer",
-        fontSize: 13,
-      }}
+      title={address ?? "Connect a wallet"}
+      className="btn-outline text-[12.5px]"
     >
-      {status === "pending" ? "…" : label}
+      {status === "pending" ? "Connecting…" : label}
     </button>
   );
 }

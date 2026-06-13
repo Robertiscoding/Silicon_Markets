@@ -166,83 +166,91 @@ export function PayoutsView() {
   }
 
   return (
-    <div style={{ display: "grid", gap: 16, maxWidth: 900 }}>
+    <div className="max-w-[900px] mx-auto w-full flex flex-col gap-4">
       <div>
-        <h1 style={{ margin: "0 0 4px" }}>Payouts</h1>
-        <p style={{ margin: 0 }}>Claimable: {formatUsd(totalClaimable)}</p>
+        <h1 className="font-display text-[26px] text-foreground m-0">Payouts</h1>
+        <p className="text-muted-strong text-[13px] mt-1">
+          Claimable: <span className="text-accent">{formatUsd(totalClaimable)}</span>
+        </p>
       </div>
 
       {!address ? (
-        <p style={{ border: "1px solid black", padding: 16, margin: 0 }}>Connect wallet to view payouts.</p>
+        <div className="panel p-5 text-muted-strong text-[13px]">Connect wallet to view payouts.</div>
       ) : rows.length === 0 ? (
-        <p style={{ border: "1px solid black", padding: 16, margin: 0 }}>No settled positions yet.</p>
+        <div className="panel p-5 text-muted-strong text-[13px]">No settled positions yet.</div>
       ) : (
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-          <thead>
-            <tr style={{ borderBottom: "1px solid black", textAlign: "left" }}>
-              <th style={{ padding: "8px 4px" }}>market</th>
-              <th style={{ padding: "8px 4px" }}>settled</th>
-              <th style={{ padding: "8px 4px" }}>band</th>
-              <th style={{ padding: "8px 4px", textAlign: "right" }}>stake</th>
-              <th style={{ padding: "8px 4px", textAlign: "right" }}>payout</th>
-              <th style={{ padding: "8px 4px", textAlign: "right" }}></th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => {
-              const id = `${r.marketId}-${r.forecastId}`;
-              const inBand = r.win || r.refunded;
-              return (
-                <tr key={id} style={{ borderBottom: "1px solid #ccc" }}>
-                  <td style={{ padding: "8px 4px" }}>
-                    {r.gpuSymbol} #{r.marketId}
-                  </td>
-                  <td style={{ padding: "8px 4px" }}>
-                    ${r.settlePrice.toFixed(2)}
-                    {r.refunded ? " (refund)" : ""}
-                  </td>
-                  <td style={{ padding: "8px 4px" }}>
-                    ${(r.center - r.band).toFixed(2)}–${(r.center + r.band).toFixed(2)}
-                  </td>
-                  <td style={{ padding: "8px 4px", textAlign: "right" }}>{formatUsd(r.stake)}</td>
-                  <td style={{ padding: "8px 4px", textAlign: "right" }}>
-                    {inBand ? formatUsd(r.payout) : "—"}
-                  </td>
-                  <td style={{ padding: "8px 4px", textAlign: "right" }}>
-                    {inBand && !r.claimed ? (
-                      <button
-                        type="button"
-                        disabled={busyId !== null}
-                        onClick={() => handleClaim(r)}
-                        style={{
-                          border: "1px solid black",
-                          background: "white",
-                          padding: "4px 10px",
-                          cursor: busyId !== null ? "not-allowed" : "pointer",
-                        }}
-                      >
-                        {busyId === id ? "…" : "Claim"}
-                      </button>
-                    ) : inBand ? (
-                      "claimed"
-                    ) : (
-                      "lost"
-                    )}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className="panel overflow-hidden">
+          <table className="w-full text-[12.5px]">
+            <thead>
+              <tr className="border-b border-[var(--border)] text-left text-muted">
+                <th className="px-4 py-3 font-medium">Market</th>
+                <th className="px-4 py-3 font-medium">Settled</th>
+                <th className="px-4 py-3 font-medium">Band</th>
+                <th className="px-4 py-3 font-medium text-right">Stake</th>
+                <th className="px-4 py-3 font-medium text-right">Payout</th>
+                <th className="px-4 py-3 font-medium text-right" />
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => {
+                const id = `${r.marketId}-${r.forecastId}`;
+                const inBand = r.win || r.refunded;
+                return (
+                  <tr key={id} className="border-b border-[var(--border)] last:border-0">
+                    <td className="px-4 py-3 text-foreground">
+                      {r.gpuSymbol} #{r.marketId}
+                    </td>
+                    <td className="px-4 py-3 text-muted-strong">
+                      ${r.settlePrice.toFixed(2)}
+                      {r.refunded ? " (refund)" : ""}
+                    </td>
+                    <td className="px-4 py-3 font-mono-thin text-muted-strong tabular-nums">
+                      ${(r.center - r.band).toFixed(2)}–${(r.center + r.band).toFixed(2)}
+                    </td>
+                    <td className="px-4 py-3 text-right tabular-nums">{formatUsd(r.stake)}</td>
+                    <td className="px-4 py-3 text-right tabular-nums">
+                      {inBand ? (
+                        <span className="text-accent">{formatUsd(r.payout)}</span>
+                      ) : (
+                        <span className="text-muted">—</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-right">
+                      {inBand && !r.claimed ? (
+                        <button
+                          type="button"
+                          disabled={busyId !== null}
+                          onClick={() => handleClaim(r)}
+                          className="btn-outline text-[11px] py-1 px-3 disabled:opacity-40"
+                        >
+                          {busyId === id ? "…" : "Claim"}
+                        </button>
+                      ) : inBand ? (
+                        <span className="text-muted text-[11px]">claimed</span>
+                      ) : (
+                        <span className="text-[var(--danger)] text-[11px]">lost</span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       )}
 
       {status ? (
-        <p style={{ margin: 0, fontSize: 12 }}>
+        <p className="text-[11px] text-muted m-0">
           {status}
           {lastTxHash ? (
             <>
               {" · "}
-              <a href={arcscanTx(lastTxHash)} target="_blank" rel="noreferrer" style={{ color: "black" }}>
+              <a
+                href={arcscanTx(lastTxHash)}
+                target="_blank"
+                rel="noreferrer"
+                className="text-accent hover:underline"
+              >
                 tx
               </a>
             </>

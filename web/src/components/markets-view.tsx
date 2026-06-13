@@ -23,6 +23,7 @@ interface MarketsViewProps {
 
 const DEFAULT_BAND_PCT = 0.04;
 const DEFAULT_STAKE_USD = 50;
+const WINDOW_OPTIONS = [1, 7, 30, 90] as const;
 
 function subscribe(cb: () => void) {
   const timer = setInterval(cb, 1000);
@@ -63,6 +64,7 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
   const spot = series.at(-1)?.price ?? 0;
   const prior = series.at(-2)?.price ?? spot;
   const changePct = prior ? ((spot - prior) / prior) * 100 : 0;
+  const positive = changePct >= 0;
   const forecastCenter = centerBySym[selected] ?? spot;
   const forecastBand = bandBySym[selected] ?? 0.03;
 
@@ -100,76 +102,90 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
   const poolUsd = marketInfo ? rawToUsdc(marketInfo.totalStake) : null;
 
   return (
-    <div style={{ display: "grid", gap: 24 }}>
-      <section>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 16 }}>
-          <div>
-            <h1 style={{ margin: "0 0 4px" }}>{selected}</h1>
-            <p style={{ margin: 0, display: "flex", gap: 12, alignItems: "baseline", flexWrap: "wrap" }}>
-              <span>{formatHr(spot)}</span>
-              <span style={{ fontSize: 13 }}>
-                {changePct >= 0 ? "+" : ""}
-                {changePct.toFixed(2)}% 24h
-              </span>
-              <span
-                style={{
-                  fontSize: 12,
-                  border: "1px solid black",
-                  padding: "2px 8px",
-                }}
-              >
-                settles in {formatSettlesIn(now, settlementTs)}
-              </span>
-              {poolUsd !== null ? (
-                <span style={{ fontSize: 12 }}>
-                  pool {formatUsd(poolUsd)} · {Number(numForecasts ?? 0)} forecasts
-                </span>
-              ) : (
-                <span style={{ fontSize: 12 }}>no on-chain market</span>
-              )}
-            </p>
+    <div className="grid grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)_340px] gap-4 max-w-[1400px] mx-auto w-full">
+      <aside className="min-h-[560px] order-2 lg:order-none">
+        <MarketFeedsPanel series={initialSeries} selected={selected} onSelect={setSelected} />
+      </aside>
+
+      <section className="min-w-0 min-h-[560px] order-1 lg:order-none panel flex flex-col overflow-hidden">
+        <div className="px-4 lg:px-5 py-4 flex flex-wrap items-start justify-between gap-4 border-b border-[var(--border)]">
+          <div className="min-w-0">
+            <h2 className="font-display text-[18px] text-foreground leading-tight">{selected} Index</h2>
+            <div className="flex items-center gap-1.5 mt-1 text-[10.5px] text-muted">
+              <span className="pulse-dot shrink-0" style={{ width: 5, height: 5 }} />
+              <span>Ornn 4PM ET print</span>
+            </div>
           </div>
-          <div style={{ display: "flex", gap: 8 }}>
-            {[1, 7, 30, 90].map((days) => (
-              <button
-                key={days}
-                type="button"
-                onClick={() => setWindowDays(days)}
-                style={{
-                  border: "1px solid black",
-                  background: windowDays === days ? "black" : "white",
-                  color: windowDays === days ? "white" : "black",
-                  padding: "4px 10px",
-                  cursor: "pointer",
-                }}
-              >
-                {days}D
-              </button>
-            ))}
+
+          <div className="flex items-center gap-2.5 shrink-0">
+            <div className="text-[28px] font-semibold text-foreground tabular-nums leading-none">
+              ${spot.toFixed(spot < 10 ? 4 : 2)}
+              <span className="text-muted text-[13px] font-normal ml-1">/hr</span>
+            </div>
+            <span
+              className="inline-flex items-center gap-1 px-2 py-[5px] rounded-full text-[11px] font-mono-thin tabular-nums leading-none"
+              style={{
+                color: positive ? "var(--accent)" : "var(--danger)",
+                background: positive ? "rgba(60,224,107,0.1)" : "rgba(255,90,107,0.1)",
+                border: `1px solid ${positive ? "rgba(60,224,107,0.28)" : "rgba(255,90,107,0.28)"}`,
+              }}
+            >
+              {positive ? "▲" : "▼"} {Math.abs(changePct).toFixed(2)}%
+            </span>
+          </div>
+
+          <div className="chip px-4 py-2.5 shrink-0 min-w-[160px]">
+            <div className="text-[9.5px] text-muted tracking-[0.14em] font-mono-thin">SETTLES IN</div>
+            <div className="text-[20px] text-foreground font-mono-thin tabular-nums mt-1 leading-none">
+              {formatSettlesIn(now, settlementTs)}
+            </div>
+            {poolUsd !== null ? (
+              <div className="text-[10.5px] text-muted mt-1.5">
+                pool {formatUsd(poolUsd)} · {Number(numForecasts ?? 0)} forecasts
+              </div>
+            ) : (
+              <div className="text-[10.5px] text-muted mt-1.5">no on-chain market</div>
+            )}
           </div>
         </div>
-        <SpotChart history={visible} forecastCenter={forecastCenter} forecastBand={forecastBand} />
+
+        <div className="px-4 lg:px-5 py-2.5 flex items-center gap-1 border-b border-[var(--border)]">
+          {WINDOW_OPTIONS.map((days) => (
+            <button
+              key={days}
+              type="button"
+              onClick={() => setWindowDays(days)}
+              className={`px-3 py-1 rounded-full text-[11.5px] transition-colors ${
+                windowDays === days
+                  ? "text-accent bg-[var(--accent-soft)] border border-[rgba(60,224,107,0.35)]"
+                  : "text-muted-strong hover:text-accent border border-transparent"
+              }`}
+            >
+              {days}D
+            </button>
+          ))}
+        </div>
+
+        <div className="flex-1 min-h-[280px]">
+          <SpotChart history={visible} forecastCenter={forecastCenter} forecastBand={forecastBand} />
+        </div>
       </section>
 
-      <ForecastPanel
-        symbol={selected}
-        spotPrice={spot}
-        forecastCenter={forecastCenter}
-        forecastBand={forecastBand}
-        stakeUsd={stake}
-        settlementTs={settlementTs}
-        nowTs={now}
-        marketId={marketId}
-        onStakeChange={setStake}
-        onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
-        onCenterChange={(center) => setCenterBySym((prev) => ({ ...prev, [selected]: center }))}
-      />
-
-      <MarketFeedsPanel
-        series={initialSeries}
-        selected={selected}
-        onSelect={setSelected}
-      />
+      <aside className="min-h-[560px] order-3">
+        <ForecastPanel
+          symbol={selected}
+          spotPrice={spot}
+          forecastCenter={forecastCenter}
+          forecastBand={forecastBand}
+          stakeUsd={stake}
+          settlementTs={settlementTs}
+          nowTs={now}
+          marketId={marketId}
+          onStakeChange={setStake}
+          onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
+          onCenterChange={(center) => setCenterBySym((prev) => ({ ...prev, [selected]: center }))}
+        />
+      </aside>
     </div>
   );
 }

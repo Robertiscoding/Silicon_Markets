@@ -1,16 +1,347 @@
+@import "tailwindcss";
+
+/* Silicon Markets — neon-green accent on a neutral grey-black theme.
+   Surfaces are clean dark-grey cards with hairline borders; green is reserved
+   for the accent (data, CTAs, highlights) only. */
+:root {
+  --background: #0a0a0b;
+  --background-elev: #141416;
+  --background-elev-2: #1a1a1d;
+  --foreground: #ededf0;
+  --muted: #82828c;
+  --muted-strong: #b4b4bd;
+  --accent: #3ce06b;
+  --accent-2: #5cf08a;
+  --accent-dim: #1ea84a;
+  --accent-soft: rgba(60, 224, 107, 0.12);
+  --accent-glow: rgba(60, 224, 107, 0.45);
+  --danger: #ff5a6b;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --panel: #110f11;
+  --panel-2: #18181b;
+  --font-brand:
+    var(--font-tt-octosquares),
+    "TT-Octosquares-Trial-1-000",
+    "TT Octosquares Trial 1 000",
+    "TT Octosquares Trial",
+    "TT Octosquares";
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-strong: var(--muted-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jet-mono);
+}
+
 * {
-  box-sizing: border-box;
+  border-color: var(--border);
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
-  font-family: Times, "Times New Roman", serif;
+  /* Soft ambient glows give the glass surfaces something to blur. */
+  background:
+    radial-gradient(1100px 560px at 50% -12%, rgba(60, 224, 107, 0.05), transparent 62%),
+    radial-gradient(900px 700px at 8% 38%, rgba(60, 224, 107, 0.035), transparent 60%),
+    radial-gradient(1000px 800px at 94% 72%, rgba(36, 130, 90, 0.04), transparent 65%),
+    radial-gradient(700px 500px at 55% 105%, rgba(255, 255, 255, 0.02), transparent 70%),
+    #0a0a0b;
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-sans), "Inter", system-ui, sans-serif;
+  min-height: 100%;
+  letter-spacing: -0.005em;
+  overflow-x: hidden;
 }
 
-a {
-  color: #000;
+.font-display {
+  font-family: var(--font-brand), var(--font-sans), "Inter", system-ui, sans-serif;
+  letter-spacing: -0.012em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.font-mono-thin {
+  font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Dark glass card panel — translucent, backdrop-blurred, specular top rim. */
+.panel {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.055) 0%,
+    rgba(17, 15, 17, 0.55) 30%,
+    rgba(17, 15, 17, 0.6) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03),
+    0 18px 38px rgba(0, 0, 0, 0.45);
+}
+
+.panel-flat {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(26, 26, 29, 0.45) 40%,
+    rgba(26, 26, 29, 0.5) 100%
+  );
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+  backdrop-filter: blur(10px) saturate(1.3);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.panel-paper {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(17, 15, 17, 0.58) 28%,
+    rgba(17, 15, 17, 0.62) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03),
+    0 22px 48px rgba(0, 0, 0, 0.55);
+}
+
+/* Small inset glass chip — used for the settles-in card and similar. */
+.chip {
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
+  -webkit-backdrop-filter: blur(10px) saturate(1.4);
+  backdrop-filter: blur(10px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.divider {
+  background: var(--border);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background: var(--accent);
+}
+
+/* Glowing pulse dot used for "Live" indicators. */
+.pulse-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+.pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 1px solid var(--accent);
+  opacity: 0.5;
+  animation: ping 1.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Liquid-glass surface — translucent, backdrop-blurred panel with a specular
+   top rim and a faint diagonal sheen. Pair with the GlassLens component when
+   actual refraction is wanted; this is the styling half of the system. */
+/* NOTE: deliberately no `position` here — it would override Tailwind's
+   absolute/fixed positioning utilities (unlayered CSS beats @layer utilities)
+   and knock floating elements back into normal flow. Give glass-panel
+   elements their own positioning class (relative/absolute). */
+.glass-panel {
+  isolation: isolate;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.085) 0%,
+    rgba(255, 255, 255, 0.025) 38%,
+    rgba(60, 224, 107, 0.04) 100%
+  );
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  backdrop-filter: blur(16px) saturate(1.6);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 14px 36px rgba(0, 0, 0, 0.5);
+}
+.glass-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 32%,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  z-index: -1;
+}
+
+/* Accent-tinted variant for elements that carry the brand green. */
+.glass-panel-accent {
+  background: linear-gradient(
+    150deg,
+    rgba(60, 224, 107, 0.14) 0%,
+    rgba(60, 224, 107, 0.04) 45%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border-color: rgba(60, 224, 107, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(60, 224, 107, 0.1),
+    0 0 22px rgba(60, 224, 107, 0.18),
+    0 14px 36px rgba(0, 0, 0, 0.5);
+}
+
+/* Forecast drag-handle idle pulse — a ring that breathes outward to invite
+   grabbing. transform-box keeps the scale centered on the SVG circle. */
+.handle-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: handle-pulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes handle-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  70%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.accent-glow {
+  box-shadow:
+    0 0 0 1px rgba(60, 224, 107, 0.35),
+    0 10px 30px rgba(60, 224, 107, 0.18);
+}
+
+.btn-accent {
+  background: linear-gradient(180deg, #4ef07d 0%, #2cc658 100%);
+  color: #04130a;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 24px rgba(60, 224, 107, 0.28);
+  transition: filter 120ms ease, transform 120ms ease;
+}
+.btn-accent:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+.btn-accent:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: background 120ms ease;
+}
+.btn-outline:hover {
+  background: var(--accent-soft);
+}
+
+.icon-pill {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--panel-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted-strong);
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.icon-pill:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Range sliders — dark track, neon thumb. */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(60, 224, 107, 0.18), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 0 3px rgba(60, 224, 107, 0.18), 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Glow utilities */
+.glow-text {
+  text-shadow: 0 0 12px rgba(60, 224, 107, 0.55);
+}
+.glow-soft {
+  box-shadow: 0 0 24px rgba(60, 224, 107, 0.2);
 }

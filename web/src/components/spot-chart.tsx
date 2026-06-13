@@ -12,6 +12,10 @@ interface SpotChartProps {
 
 const PAD = { top: 16, right: 16, bottom: 28, left: 56 };
 const FORECAST_FRACTION = 0.22;
+const GRID = "rgba(255,255,255,0.08)";
+const MUTED = "#82828c";
+const ACCENT = "#3ce06b";
+const ACCENT_DIM = "#1ea84a";
 
 export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartProps) {
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -23,7 +27,7 @@ export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartPr
     const ro = new ResizeObserver((entries) => {
       const rect = entries[0]?.contentRect;
       if (rect && rect.width > 50) {
-        setSize({ w: Math.round(rect.width), h: 280 });
+        setSize({ w: Math.round(rect.width), h: Math.max(280, Math.round(rect.height)) });
       }
     });
     ro.observe(el);
@@ -73,26 +77,18 @@ export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartPr
   }, [history, size, forecastCenter, forecastBand]);
 
   return (
-    <div
-      ref={wrapRef}
-      style={{
-        marginTop: 16,
-        border: "1px solid black",
-        background: "white",
-        minHeight: 280,
-      }}
-    >
+    <div ref={wrapRef} className="w-full h-full min-h-[280px] relative">
       {!plot || history.length < 2 ? (
-        <p style={{ padding: 16, margin: 0 }}>not enough data</p>
+        <p className="p-4 text-muted text-[13px]">Not enough data</p>
       ) : (
-        <svg width={size.w} height={size.h} role="img" aria-label="Spot price chart">
+        <svg width={size.w} height={size.h} role="img" aria-label="Spot price chart" className="block">
           {[0, 0.5, 1].map((t) => {
             const price = plot.yMin + (plot.yMax - plot.yMin) * (1 - t);
-            const y = plot.y(price);
+            const yPos = plot.y(price);
             return (
               <g key={t}>
-                <line x1={PAD.left} x2={plot.chartRight} y1={y} y2={y} stroke="#ccc" strokeWidth={1} />
-                <text x={8} y={y + 4} fontSize={11} fill="black">
+                <line x1={PAD.left} x2={plot.chartRight} y1={yPos} y2={yPos} stroke={GRID} strokeWidth={1} />
+                <text x={8} y={yPos + 4} fontSize={11} fill={MUTED}>
                   {formatHr(price)}
                 </text>
               </g>
@@ -104,8 +100,8 @@ export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartPr
             y={plot.y(plot.bandHi)}
             width={plot.chartRight - plot.forecastX}
             height={Math.max(1, plot.y(plot.bandLo) - plot.y(plot.bandHi))}
-            fill="#ddd"
-            stroke="black"
+            fill="rgba(60,224,107,0.12)"
+            stroke="rgba(60,224,107,0.35)"
             strokeWidth={1}
           />
           <line
@@ -113,7 +109,7 @@ export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartPr
             x2={plot.forecastX}
             y1={PAD.top}
             y2={size.h - PAD.bottom}
-            stroke="black"
+            stroke="rgba(255,255,255,0.2)"
             strokeDasharray="4 3"
           />
           <line
@@ -121,13 +117,13 @@ export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartPr
             x2={plot.chartRight}
             y1={plot.y(forecastCenter)}
             y2={plot.y(forecastCenter)}
-            stroke="black"
+            stroke={ACCENT}
             strokeWidth={1.5}
           />
 
-          <path d={plot.line} fill="none" stroke="black" strokeWidth={2} />
-          <circle cx={plot.xHist(plot.last.ts)} cy={plot.y(plot.last.price)} r={4} fill="black" />
-          <text x={plot.forecastX + 8} y={PAD.top + 14} fontSize={11} fill="black">
+          <path d={plot.line} fill="none" stroke={ACCENT_DIM} strokeWidth={2} />
+          <circle cx={plot.xHist(plot.last.ts)} cy={plot.y(plot.last.price)} r={4} fill={ACCENT} />
+          <text x={plot.forecastX + 8} y={PAD.top + 14} fontSize={11} fill={MUTED}>
             forecast
           </text>
         </svg>
