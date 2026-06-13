@@ -1,5 +1,6 @@
 "use client";
 
+import { useAccount } from "wagmi";
 import {
   expectedPayout,
   formatHr,
@@ -32,6 +33,7 @@ export function ForecastPanel({
   onBandChange,
   onCenterChange,
 }: ForecastPanelProps) {
+  const { isConnected } = useAccount();
   const probability = gaussianBandProbability(spotPrice, forecastCenter, forecastBand);
   const oddsBps = Math.max(1, Math.round(probability * 10_000));
   const payout = expectedPayout(stakeUsd, oddsBps);
@@ -97,16 +99,16 @@ export function ForecastPanel({
 
         <button
           type="button"
-          disabled
+          disabled={!isConnected}
           style={{
             border: "1px solid black",
-            background: "#eee",
-            color: "#666",
+            background: isConnected ? "white" : "#eee",
+            color: isConnected ? "black" : "#666",
             padding: "10px 12px",
-            cursor: "not-allowed",
+            cursor: isConnected ? "pointer" : "not-allowed",
           }}
         >
-          Lock forecast (wallet required)
+          {isConnected ? "Lock forecast" : "Connect wallet to lock"}
         </button>
       </div>
     </section>

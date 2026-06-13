@@ -22,6 +22,19 @@ export function formatHr(value: number): string {
   return `${formatUsd(value, value < 10 ? 4 : 2)}/hr`;
 }
 
+export function rawToUsdc(raw: bigint): number {
+  return Number(raw) / 1_000_000;
+}
+
+export function priceToScaled(usd: number): bigint {
+  if (!Number.isFinite(usd) || usd <= 0) throw new Error(`Invalid price ${usd}`);
+  return BigInt(Math.round(usd * 1e8));
+}
+
+export function usdcToRaw(amount: number): bigint {
+  return BigInt(Math.round(amount * 1_000_000));
+}
+
 export function settlementTsForDate(d: Date): number {
   const tz = "America/New_York";
   const parts = new Intl.DateTimeFormat("en-US", {

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { WalletButton } from "./wallet-button";
 
 const NAV = [
   { label: "Markets", href: "/markets", match: ["/", "/markets"] },
@@ -15,17 +16,18 @@ export function SiteHeader() {
   return (
     <header
       style={{
-        display: "flex",
+        display: "grid",
+        gridTemplateColumns: "1fr auto 1fr",
         alignItems: "center",
-        justifyContent: "space-between",
         padding: "12px 24px",
         borderBottom: "1px solid black",
+        gap: 16,
       }}
     >
       <Link href="/" style={{ color: "black", textDecoration: "none", fontWeight: 700 }}>
         SILICON MARKETS
       </Link>
-      <nav style={{ display: "flex", gap: 16 }}>
+      <nav style={{ display: "flex", gap: 16, justifyContent: "center" }}>
         {NAV.map((item) => {
           const active = item.match.some((path) => path === pathname);
           return (
@@ -43,6 +45,9 @@ export function SiteHeader() {
           );
         })}
       </nav>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <WalletButton />
+      </div>
     </header>
   );
 }

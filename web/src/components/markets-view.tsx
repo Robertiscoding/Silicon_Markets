@@ -1,11 +1,15 @@
 "use client";
 
 import { useMemo, useState, useSyncExternalStore } from "react";
+import { useReadContract } from "wagmi";
 import type { PricePoint } from "@/lib/seed-history";
+import { SILICON_MARKET_ABI, SILICON_MARKET_ADDRESS } from "@/lib/contracts";
 import {
   formatHr,
   formatSettlesIn,
+  formatUsd,
   GPU_SYMBOLS,
+  rawToUsdc,
   type GpuSymbol,
 } from "@/lib/markets";
 import { ForecastPanel } from "./forecast-panel";
@@ -67,6 +71,33 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
     return series.filter((p) => p.ts >= cutoff);
   }, [series, windowDays]);
 
+  const { data: marketIdLookup } = useReadContract({
+    address: SILICON_MARKET_ADDRESS,
+    abi: SILICON_MARKET_ABI,
+    functionName: "marketIdFor",
+    args: [selected, BigInt(settlementTs)],
+    query: { refetchInterval: 30_000 },
+  });
+  const marketId = marketIdLookup?.[1] ? marketIdLookup[0] : null;
+
+  const { data: marketInfo } = useReadContract({
+    address: SILICON_MARKET_ADDRESS,
+    abi: SILICON_MARKET_ABI,
+    functionName: "getMarket",
+    args: marketId !== null ? [marketId] : undefined,
+    query: { enabled: marketId !== null, refetchInterval: 30_000 },
+  });
+
+  const { data: numForecasts } = useReadContract({
+    address: SILICON_MARKET_ADDRESS,
+    abi: SILICON_MARKET_ABI,
+    functionName: "forecastCount",
+    args: marketId !== null ? [marketId] : undefined,
+    query: { enabled: marketId !== null, refetchInterval: 30_000 },
+  });
+
+  const poolUsd = marketInfo ? rawToUsdc(marketInfo.totalStake) : null;
+
   return (
     <div style={{ display: "grid", gap: 24 }}>
       <section>
@@ -88,6 +119,13 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
               >
                 settles in {formatSettlesIn(now, settlementTs)}
               </span>
+              {poolUsd !== null ? (
+                <span style={{ fontSize: 12 }}>
+                  pool {formatUsd(poolUsd)} · {Number(numForecasts ?? 0)} forecasts
+                </span>
+              ) : (
+                <span style={{ fontSize: 12 }}>no on-chain market</span>
+              )}
             </p>
           </div>
           <div style={{ display: "flex", gap: 8 }}>
