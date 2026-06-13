@@ -22,6 +22,15 @@ forge script script/DeploySiliconMarket.s.sol:DeploySiliconMarket \
   --rpc-url "$ARC_RPC_URL" --broadcast
 ```
 
+## Deploy BucketMarket
+
+Requires `OrnnOracle` in `deployments/arc.json`.
+
+```bash
+forge script script/DeployBucketMarket.s.sol:DeployBucketMarket \
+  --rpc-url "$ARC_RPC_URL" --broadcast
+```
+
 ## Test
 
 ```bash
