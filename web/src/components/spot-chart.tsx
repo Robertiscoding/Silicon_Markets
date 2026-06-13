@@ -6,11 +6,14 @@ import { formatHr } from "@/lib/markets";
 
 interface SpotChartProps {
   history: PricePoint[];
+  forecastCenter: number;
+  forecastBand: number;
 }
 
 const PAD = { top: 16, right: 16, bottom: 28, left: 56 };
+const FORECAST_FRACTION = 0.22;
 
-export function SpotChart({ history }: SpotChartProps) {
+export function SpotChart({ history, forecastCenter, forecastBand }: SpotChartProps) {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const [size, setSize] = useState({ w: 800, h: 280 });
 
@@ -35,22 +38,39 @@ export function SpotChart({ history }: SpotChartProps) {
     }
 
     const prices = history.map((p) => p.price);
-    const minPrice = Math.min(...prices);
-    const maxPrice = Math.max(...prices);
+    const bandLo = forecastCenter - forecastBand;
+    const bandHi = forecastCenter + forecastBand;
+    const minPrice = Math.min(...prices, bandLo);
+    const maxPrice = Math.max(...prices, bandHi);
     const padY = (maxPrice - minPrice || minPrice * 0.05) * 0.12;
     const yMin = minPrice - padY;
     const yMax = maxPrice + padY;
     const xMin = history[0].ts;
     const xMax = history.at(-1)!.ts;
+    const histW = innerW * (1 - FORECAST_FRACTION);
+    const forecastX = PAD.left + histW;
 
-    const x = (ts: number) => PAD.left + ((ts - xMin) / (xMax - xMin || 1)) * innerW;
+    const xHist = (ts: number) => PAD.left + ((ts - xMin) / (xMax - xMin || 1)) * histW;
     const y = (price: number) => PAD.top + (1 - (price - yMin) / (yMax - yMin || 1)) * innerH;
 
-    const line = history.map((p, i) => `${i === 0 ? "M" : "L"} ${x(p.ts).toFixed(1)} ${y(p.price).toFixed(1)}`).join(" ");
+    const line = history
+      .map((p, i) => `${i === 0 ? "M" : "L"} ${xHist(p.ts).toFixed(1)} ${y(p.price).toFixed(1)}`)
+      .join(" ");
     const last = history.at(-1)!;
 
-    return { line, last, x, y, yMin, yMax, innerH };
-  }, [history, size]);
+    return {
+      line,
+      last,
+      xHist,
+      y,
+      yMin,
+      yMax,
+      forecastX,
+      bandLo,
+      bandHi,
+      chartRight: size.w - PAD.right,
+    };
+  }, [history, size, forecastCenter, forecastBand]);
 
   return (
     <div
@@ -71,15 +91,45 @@ export function SpotChart({ history }: SpotChartProps) {
             const y = plot.y(price);
             return (
               <g key={t}>
-                <line x1={PAD.left} x2={size.w - PAD.right} y1={y} y2={y} stroke="#ccc" strokeWidth={1} />
+                <line x1={PAD.left} x2={plot.chartRight} y1={y} y2={y} stroke="#ccc" strokeWidth={1} />
                 <text x={8} y={y + 4} fontSize={11} fill="black">
                   {formatHr(price)}
                 </text>
               </g>
             );
           })}
+
+          <rect
+            x={plot.forecastX}
+            y={plot.y(plot.bandHi)}
+            width={plot.chartRight - plot.forecastX}
+            height={Math.max(1, plot.y(plot.bandLo) - plot.y(plot.bandHi))}
+            fill="#ddd"
+            stroke="black"
+            strokeWidth={1}
+          />
+          <line
+            x1={plot.forecastX}
+            x2={plot.forecastX}
+            y1={PAD.top}
+            y2={size.h - PAD.bottom}
+            stroke="black"
+            strokeDasharray="4 3"
+          />
+          <line
+            x1={plot.forecastX}
+            x2={plot.chartRight}
+            y1={plot.y(forecastCenter)}
+            y2={plot.y(forecastCenter)}
+            stroke="black"
+            strokeWidth={1.5}
+          />
+
           <path d={plot.line} fill="none" stroke="black" strokeWidth={2} />
-          <circle cx={plot.x(plot.last.ts)} cy={plot.y(plot.last.price)} r={4} fill="black" />
+          <circle cx={plot.xHist(plot.last.ts)} cy={plot.y(plot.last.price)} r={4} fill="black" />
+          <text x={plot.forecastX + 8} y={PAD.top + 14} fontSize={11} fill="black">
+            forecast
+          </text>
         </svg>
       )}
     </div>

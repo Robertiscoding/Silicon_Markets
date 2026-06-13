@@ -1,22 +1,65 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import type { PricePoint } from "@/lib/seed-history";
-import { formatHr, GPU_SYMBOLS, type GpuSymbol } from "@/lib/markets";
+import {
+  formatHr,
+  formatSettlesIn,
+  GPU_SYMBOLS,
+  type GpuSymbol,
+} from "@/lib/markets";
+import { ForecastPanel } from "./forecast-panel";
 import { SpotChart } from "./spot-chart";
 
 interface MarketsViewProps {
   initialSeries: Record<string, PricePoint[]>;
+  settlementTs: number;
 }
 
-export function MarketsView({ initialSeries }: MarketsViewProps) {
+const DEFAULT_BAND_PCT = 0.04;
+const DEFAULT_STAKE_USD = 50;
+
+function subscribe(cb: () => void) {
+  const timer = setInterval(cb, 1000);
+  return () => clearInterval(timer);
+}
+
+function getSnapshot() {
+  return Math.floor(Date.now() / 1000);
+}
+
+function getServerSnapshot() {
+  return 0;
+}
+
+function initialForecastState(series: Record<string, PricePoint[]>) {
+  const centers: Record<string, number> = {};
+  const bands: Record<string, number> = {};
+  for (const symbol of GPU_SYMBOLS) {
+    const list = series[symbol] ?? [];
+    const spot = list.at(-1)?.price ?? 1;
+    centers[symbol] = spot;
+    bands[symbol] = Math.max(0.01, +(spot * DEFAULT_BAND_PCT).toFixed(3));
+  }
+  return { centers, bands };
+}
+
+export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
   const [selected, setSelected] = useState<GpuSymbol>("RTX 5090");
   const [windowDays, setWindowDays] = useState(30);
+  const [stake, setStake] = useState(DEFAULT_STAKE_USD);
+  const now = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+
+  const initialForecast = useMemo(() => initialForecastState(initialSeries), [initialSeries]);
+  const [centerBySym, setCenterBySym] = useState(initialForecast.centers);
+  const [bandBySym, setBandBySym] = useState(initialForecast.bands);
 
   const series = initialSeries[selected] ?? [];
   const spot = series.at(-1)?.price ?? 0;
   const prior = series.at(-2)?.price ?? spot;
   const changePct = prior ? ((spot - prior) / prior) * 100 : 0;
+  const forecastCenter = centerBySym[selected] ?? spot;
+  const forecastBand = bandBySym[selected] ?? 0.03;
 
   const visible = useMemo(() => {
     if (windowDays >= 365) return series;
@@ -27,14 +70,23 @@ export function MarketsView({ initialSeries }: MarketsViewProps) {
   return (
     <div style={{ display: "grid", gap: 24 }}>
       <section>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 16 }}>
           <div>
             <h1 style={{ margin: "0 0 4px" }}>{selected}</h1>
-            <p style={{ margin: 0, display: "flex", gap: 12, alignItems: "baseline" }}>
+            <p style={{ margin: 0, display: "flex", gap: 12, alignItems: "baseline", flexWrap: "wrap" }}>
               <span>{formatHr(spot)}</span>
               <span style={{ fontSize: 13 }}>
                 {changePct >= 0 ? "+" : ""}
                 {changePct.toFixed(2)}% 24h
+              </span>
+              <span
+                style={{
+                  fontSize: 12,
+                  border: "1px solid black",
+                  padding: "2px 8px",
+                }}
+              >
+                settles in {formatSettlesIn(now, settlementTs)}
               </span>
             </p>
           </div>
@@ -57,8 +109,19 @@ export function MarketsView({ initialSeries }: MarketsViewProps) {
             ))}
           </div>
         </div>
-        <SpotChart history={visible} />
+        <SpotChart history={visible} forecastCenter={forecastCenter} forecastBand={forecastBand} />
       </section>
+
+      <ForecastPanel
+        symbol={selected}
+        spotPrice={spot}
+        forecastCenter={forecastCenter}
+        forecastBand={forecastBand}
+        stakeUsd={stake}
+        onStakeChange={setStake}
+        onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
+        onCenterChange={(center) => setCenterBySym((prev) => ({ ...prev, [selected]: center }))}
+      />
 
       <section>
         <h2 style={{ marginTop: 0 }}>All markets</h2>
