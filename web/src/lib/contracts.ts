@@ -77,6 +77,45 @@ export const SILICON_MARKET_ABI = [
   },
   {
     type: "function",
+    name: "marketCount",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "getForecast",
+    stateMutability: "view",
+    inputs: [
+      { name: "marketId", type: "uint256" },
+      { name: "forecastId", type: "uint256" },
+    ],
+    outputs: [
+      {
+        name: "",
+        type: "tuple",
+        components: [
+          { name: "user", type: "address" },
+          { name: "center", type: "int128" },
+          { name: "band", type: "uint128" },
+          { name: "stake", type: "uint128" },
+          { name: "claimed", type: "bool" },
+        ],
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "claim",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "marketId", type: "uint256" },
+      { name: "forecastId", type: "uint256" },
+    ],
+    outputs: [{ name: "payout", type: "uint256" }],
+  },
+  {
+    type: "function",
     name: "lockForecast",
     stateMutability: "nonpayable",
     inputs: [

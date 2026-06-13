@@ -23,3 +23,7 @@ export const arcTestnet = defineChain({
 });
 
 export const ARC_USDC_ADDRESS = "0x3600000000000000000000000000000000000000" as const;
+
+export function arcscanTx(hash: string): string {
+  return `${arcTestnet.blockExplorers.default.url}/tx/${hash}`;
+}

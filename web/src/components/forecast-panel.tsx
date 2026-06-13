@@ -15,6 +15,7 @@ import {
   SILICON_MARKET_ADDRESS,
   USDC_ADDRESS,
 } from "@/lib/contracts";
+import { arcscanTx } from "@/lib/chain";
 import {
   expectedPayout,
   formatHr,
@@ -59,6 +60,7 @@ export function ForecastPanel({
   const { address, isConnected } = useAccount();
   const publicClient = usePublicClient();
   const [status, setStatus] = useState("");
+  const [lastTxHash, setLastTxHash] = useState<string | null>(null);
 
   const stakeRaw = useMemo(() => usdcToRaw(stakeUsd), [stakeUsd]);
 
@@ -143,7 +145,8 @@ export function ForecastPanel({
         functionName: "lockForecast",
         args: [id, priceToScaled(forecastCenter), priceToScaled(forecastBand), stakeRaw],
       });
-      setStatus(`Locked · ${hash.slice(0, 10)}…`);
+      setStatus(`Locked ${formatUsd(stakeUsd)}`);
+      setLastTxHash(hash);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       setStatus(`Error: ${msg.slice(0, 120)}`);
@@ -233,7 +236,19 @@ export function ForecastPanel({
                 : "Lock forecast"}
         </button>
 
-        {status ? <p style={{ margin: 0, fontSize: 12 }}>{status}</p> : null}
+        {status ? (
+          <p style={{ margin: 0, fontSize: 12 }}>
+            {status}
+            {lastTxHash ? (
+              <>
+                {" · "}
+                <a href={arcscanTx(lastTxHash)} target="_blank" rel="noreferrer" style={{ color: "black" }}>
+                  tx
+                </a>
+              </>
+            ) : null}
+          </p>
+        ) : null}
       </div>
     </section>
   );
