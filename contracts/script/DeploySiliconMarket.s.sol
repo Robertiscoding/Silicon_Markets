@@ -17,6 +17,7 @@ contract DeploySiliconMarket is Script {
 
         string memory root = vm.readFile("deployments/arc.json");
         address oracleAddr = vm.parseJsonAddress(root, ".oracle");
+        address book = vm.parseJsonAddress(root, ".book");
         address updater = vm.parseJsonAddress(root, ".updater");
         address owner = vm.parseJsonAddress(root, ".owner");
         OrnnOracle oracle = OrnnOracle(oracleAddr);
@@ -44,6 +45,9 @@ contract DeploySiliconMarket is Script {
                 "\",\n",
                 '  "market": "',
                 vm.toString(address(market)),
+                "\",\n",
+                '  "book": "',
+                vm.toString(book),
                 "\",\n",
                 '  "updater": "',
                 vm.toString(updater),

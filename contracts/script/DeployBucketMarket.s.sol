@@ -20,6 +20,8 @@ contract DeployBucketMarket is Script {
         address market = vm.parseJsonAddress(root, ".market");
         address feeRecipient = vm.parseJsonAddress(root, ".feeRecipient");
         uint256 feeBps = vm.parseJsonUint(root, ".feeBps");
+        bool hasDemo = vm.keyExistsJson(root, ".demoMarket");
+        address demoMarket = hasDemo ? vm.parseJsonAddress(root, ".demoMarket") : address(0);
         OrnnOracle oracle = OrnnOracle(oracleAddr);
 
         vm.startBroadcast(pk);
@@ -30,36 +32,73 @@ contract DeployBucketMarket is Script {
         console2.log("BucketMarket:", address(book));
         console2.log("Oracle:", oracleAddr);
 
-        string memory json = string(
-            abi.encodePacked(
-                "{\n",
-                '  "chainId": ',
-                vm.toString(block.chainid),
-                ",\n",
-                '  "usdc": "0x3600000000000000000000000000000000000000",\n',
-                '  "oracle": "',
-                vm.toString(oracleAddr),
-                "\",\n",
-                '  "market": "',
-                vm.toString(market),
-                "\",\n",
-                '  "book": "',
-                vm.toString(address(book)),
-                "\",\n",
-                '  "updater": "',
-                vm.toString(updater),
-                "\",\n",
-                '  "owner": "',
-                vm.toString(owner),
-                "\",\n",
-                '  "feeRecipient": "',
-                vm.toString(feeRecipient),
-                "\",\n",
-                '  "feeBps": ',
-                vm.toString(feeBps),
-                "\n}\n"
-            )
-        );
+        string memory json;
+        if (hasDemo) {
+            json = string(
+                abi.encodePacked(
+                    "{\n",
+                    '  "chainId": ',
+                    vm.toString(block.chainid),
+                    ",\n",
+                    '  "usdc": "0x3600000000000000000000000000000000000000",\n',
+                    '  "oracle": "',
+                    vm.toString(oracleAddr),
+                    "\",\n",
+                    '  "market": "',
+                    vm.toString(market),
+                    "\",\n",
+                    '  "book": "',
+                    vm.toString(address(book)),
+                    "\",\n",
+                    '  "demoMarket": "',
+                    vm.toString(demoMarket),
+                    "\",\n",
+                    '  "updater": "',
+                    vm.toString(updater),
+                    "\",\n",
+                    '  "owner": "',
+                    vm.toString(owner),
+                    "\",\n",
+                    '  "feeRecipient": "',
+                    vm.toString(feeRecipient),
+                    "\",\n",
+                    '  "feeBps": ',
+                    vm.toString(feeBps),
+                    "\n}\n"
+                )
+            );
+        } else {
+            json = string(
+                abi.encodePacked(
+                    "{\n",
+                    '  "chainId": ',
+                    vm.toString(block.chainid),
+                    ",\n",
+                    '  "usdc": "0x3600000000000000000000000000000000000000",\n',
+                    '  "oracle": "',
+                    vm.toString(oracleAddr),
+                    "\",\n",
+                    '  "market": "',
+                    vm.toString(market),
+                    "\",\n",
+                    '  "book": "',
+                    vm.toString(address(book)),
+                    "\",\n",
+                    '  "updater": "',
+                    vm.toString(updater),
+                    "\",\n",
+                    '  "owner": "',
+                    vm.toString(owner),
+                    "\",\n",
+                    '  "feeRecipient": "',
+                    vm.toString(feeRecipient),
+                    "\",\n",
+                    '  "feeBps": ',
+                    vm.toString(feeBps),
+                    "\n}\n"
+                )
+            );
+        }
         vm.writeFile("deployments/arc.json", json);
     }
 }
