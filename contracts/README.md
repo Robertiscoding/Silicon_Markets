@@ -13,6 +13,15 @@ forge script script/DeployOrnnOracle.s.sol:DeployOrnnOracle \
 
 Deployed addresses live in `deployments/arc.json`.
 
+## Deploy SiliconMarket
+
+Requires `OrnnOracle` in `deployments/arc.json`.
+
+```bash
+forge script script/DeploySiliconMarket.s.sol:DeploySiliconMarket \
+  --rpc-url "$ARC_RPC_URL" --broadcast
+```
+
 ## Test
 
 ```bash
