@@ -1,0 +1,31 @@
+{
+  "name": "@silicon-markets/oracle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Off-chain agent that scrapes the Ornn Compute Price Index at 4 PM ET daily, archives every print, and pushes them onchain to OrnnOracle on Arc.",
+  "scripts": {
+    "backfill": "tsx src/backfill.ts",
+    "scrape": "tsx src/scrape.ts",
+    "scrape:browser": "tsx src/puppeteer-scrape.ts",
+    "fund": "tsx src/fund.ts",
+    "publish": "tsx src/publish.ts",
+    "settle": "tsx src/settle.ts",
+    "tick": "tsx src/tick.ts",
+    "daemon": "tsx src/daemon.ts",
+    "history": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts"
+  },
+  "dependencies": {
+    "@circle-fin/adapter-viem-v2": "^1.11.2",
+    "@circle-fin/app-kit": "^1.7.0",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^25.1.0",
+    "viem": "^2.21.45"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

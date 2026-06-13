@@ -1,0 +1,4679 @@
+{
+  "updatedAt": "2026-06-12T21:02:04.866Z",
+  "symbols": {
+    "H100 SXM": [
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "165000000",
+        "price": 1.65
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "165000000",
+        "price": 1.65
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "166000000",
+        "price": 1.66
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "166000000",
+        "price": 1.66
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "166000000",
+        "price": 1.66
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "167000000",
+        "price": 1.67
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "164000000",
+        "price": 1.64
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "167000000",
+        "price": 1.67
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "170000000",
+        "price": 1.7
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "170000000",
+        "price": 1.7
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "169000000",
+        "price": 1.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "169000000",
+        "price": 1.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "168000000",
+        "price": 1.68
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "168000000",
+        "price": 1.68
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "168000000",
+        "price": 1.68
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "167000000",
+        "price": 1.67
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "169000000",
+        "price": 1.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "170000000",
+        "price": 1.7
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "173000000",
+        "price": 1.73
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "173000000",
+        "price": 1.73
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "172000000",
+        "price": 1.72
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "171000000",
+        "price": 1.71
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "169000000",
+        "price": 1.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "169000000",
+        "price": 1.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "170000000",
+        "price": 1.7
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "171000000",
+        "price": 1.71
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "168000000",
+        "price": 1.68
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "168000000",
+        "price": 1.68
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "172000000",
+        "price": 1.72
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "172000000",
+        "price": 1.72
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "171000000",
+        "price": 1.71
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "176000000",
+        "price": 1.76
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "174000000",
+        "price": 1.74
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "176000000",
+        "price": 1.76
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "178000000",
+        "price": 1.78
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "176000000",
+        "price": 1.76
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "176000000",
+        "price": 1.76
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "179000000",
+        "price": 1.79
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "180000000",
+        "price": 1.8
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "177000000",
+        "price": 1.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "175000000",
+        "price": 1.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "174000000",
+        "price": 1.74
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "178000000",
+        "price": 1.78
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "181000000",
+        "price": 1.81
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "183000000",
+        "price": 1.83
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "185000000",
+        "price": 1.85
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "190000000",
+        "price": 1.9
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "186000000",
+        "price": 1.86
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "186000000",
+        "price": 1.86
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "187000000",
+        "price": 1.87
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "192000000",
+        "price": 1.92
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "195000000",
+        "price": 1.95
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "198000000",
+        "price": 1.98
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "228000000",
+        "price": 2.28
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "234000000",
+        "price": 2.34
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "239000000",
+        "price": 2.39
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "241000000",
+        "price": 2.41
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "243000000",
+        "price": 2.43
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "264000000",
+        "price": 2.64
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "278000000",
+        "price": 2.78
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "278000000",
+        "price": 2.78
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "273000000",
+        "price": 2.73
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "275000000",
+        "price": 2.75
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "274000000",
+        "price": 2.74
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "290000000",
+        "price": 2.9
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "294000000",
+        "price": 2.94
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "305000000",
+        "price": 3.05
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "314000000",
+        "price": 3.14
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "319000000",
+        "price": 3.19
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "320000000",
+        "price": 3.2
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "315000000",
+        "price": 3.15
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "324000000",
+        "price": 3.24
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "320000000",
+        "price": 3.2
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "306000000",
+        "price": 3.06
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "304000000",
+        "price": 3.04
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "303000000",
+        "price": 3.03
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "308000000",
+        "price": 3.08
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "285000000",
+        "price": 2.85
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "263000000",
+        "price": 2.63
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "276000000",
+        "price": 2.76
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "281000000",
+        "price": 2.81
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "299000000",
+        "price": 2.99
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "301000000",
+        "price": 3.01
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "294000000",
+        "price": 2.94
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "277000000",
+        "price": 2.77
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "274000000",
+        "price": 2.74
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "269000000",
+        "price": 2.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "269000000",
+        "price": 2.69
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "291000000",
+        "price": 2.91
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "317000000",
+        "price": 3.17
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "315000000",
+        "price": 3.15
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "310000000",
+        "price": 3.1
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "301000000",
+        "price": 3.01
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "291000000",
+        "price": 2.91
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "274000000",
+        "price": 2.74
+      },
+      {
+        "symbol": "H100 SXM",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "267000000",
+        "price": 2.67
+      }
+    ],
+    "H200": [
+      {
+        "symbol": "H200",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "225000000",
+        "price": 2.25
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "227000000",
+        "price": 2.27
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "226000000",
+        "price": 2.26
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "231000000",
+        "price": 2.31
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "228000000",
+        "price": 2.28
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "230000000",
+        "price": 2.3
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "242000000",
+        "price": 2.42
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "234000000",
+        "price": 2.34
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "237000000",
+        "price": 2.37
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "242000000",
+        "price": 2.42
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "245000000",
+        "price": 2.45
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "241000000",
+        "price": 2.41
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "242000000",
+        "price": 2.42
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "241000000",
+        "price": 2.41
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "239000000",
+        "price": 2.39
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "242000000",
+        "price": 2.42
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "240000000",
+        "price": 2.4
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "244000000",
+        "price": 2.44
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "247000000",
+        "price": 2.47
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "248000000",
+        "price": 2.48
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "249000000",
+        "price": 2.49
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "253000000",
+        "price": 2.53
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "254000000",
+        "price": 2.54
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "260000000",
+        "price": 2.6
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "263000000",
+        "price": 2.63
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "265000000",
+        "price": 2.65
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "263000000",
+        "price": 2.63
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "258000000",
+        "price": 2.58
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "253000000",
+        "price": 2.53
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "249000000",
+        "price": 2.49
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "246000000",
+        "price": 2.46
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "249000000",
+        "price": 2.49
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "252000000",
+        "price": 2.52
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "248000000",
+        "price": 2.48
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "249000000",
+        "price": 2.49
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "255000000",
+        "price": 2.55
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "258000000",
+        "price": 2.58
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "258000000",
+        "price": 2.58
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "258000000",
+        "price": 2.58
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "258000000",
+        "price": 2.58
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "259000000",
+        "price": 2.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "264000000",
+        "price": 2.64
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "278000000",
+        "price": 2.78
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "268000000",
+        "price": 2.68
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "260000000",
+        "price": 2.6
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "263000000",
+        "price": 2.63
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "283000000",
+        "price": 2.83
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "304000000",
+        "price": 3.04
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "309000000",
+        "price": 3.09
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "315000000",
+        "price": 3.15
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "336000000",
+        "price": 3.36
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "363000000",
+        "price": 3.63
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "378000000",
+        "price": 3.78
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "382000000",
+        "price": 3.82
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "381000000",
+        "price": 3.81
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "365000000",
+        "price": 3.65
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "359000000",
+        "price": 3.59
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "320000000",
+        "price": 3.2
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "315000000",
+        "price": 3.15
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "315000000",
+        "price": 3.15
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "334000000",
+        "price": 3.34
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "348000000",
+        "price": 3.48
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "379000000",
+        "price": 3.79
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "409000000",
+        "price": 4.09
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "396000000",
+        "price": 3.96
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "385000000",
+        "price": 3.85
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "404000000",
+        "price": 4.04
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "407000000",
+        "price": 4.07
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "413000000",
+        "price": 4.13
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "402000000",
+        "price": 4.02
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "397000000",
+        "price": 3.97
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "417000000",
+        "price": 4.17
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "425000000",
+        "price": 4.25
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "418000000",
+        "price": 4.18
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "423000000",
+        "price": 4.23
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "444000000",
+        "price": 4.44
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "449000000",
+        "price": 4.49
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "496000000",
+        "price": 4.96
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "640000000",
+        "price": 6.4
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "701000000",
+        "price": 7.01
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "572000000",
+        "price": 5.72
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "472000000",
+        "price": 4.72
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "476000000",
+        "price": 4.76
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "579000000",
+        "price": 5.79
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "507000000",
+        "price": 5.07
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "542000000",
+        "price": 5.42
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "439000000",
+        "price": 4.39
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "411000000",
+        "price": 4.11
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "399000000",
+        "price": 3.99
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "390000000",
+        "price": 3.9
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "393000000",
+        "price": 3.93
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "400000000",
+        "price": 4
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "431000000",
+        "price": 4.31
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "503000000",
+        "price": 5.03
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "466000000",
+        "price": 4.66
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "412000000",
+        "price": 4.12
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "391000000",
+        "price": 3.91
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "393000000",
+        "price": 3.93
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "437000000",
+        "price": 4.37
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "471000000",
+        "price": 4.71
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "471000000",
+        "price": 4.71
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "460000000",
+        "price": 4.6
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "413000000",
+        "price": 4.13
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "379000000",
+        "price": 3.79
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "380000000",
+        "price": 3.8
+      },
+      {
+        "symbol": "H200",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "378000000",
+        "price": 3.78
+      }
+    ],
+    "B200": [
+      {
+        "symbol": "B200",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "296000000",
+        "price": 2.96
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "300000000",
+        "price": 3
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "301000000",
+        "price": 3.01
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "301000000",
+        "price": 3.01
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "300000000",
+        "price": 3
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "306000000",
+        "price": 3.06
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "305000000",
+        "price": 3.05
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "303000000",
+        "price": 3.03
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "301000000",
+        "price": 3.01
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "307000000",
+        "price": 3.07
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "351000000",
+        "price": 3.51
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "306000000",
+        "price": 3.06
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "324000000",
+        "price": 3.24
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "325000000",
+        "price": 3.25
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "328000000",
+        "price": 3.28
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "334000000",
+        "price": 3.34
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "335000000",
+        "price": 3.35
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "337000000",
+        "price": 3.37
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "340000000",
+        "price": 3.4
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "349000000",
+        "price": 3.49
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "352000000",
+        "price": 3.52
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "337000000",
+        "price": 3.37
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "337000000",
+        "price": 3.37
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "333000000",
+        "price": 3.33
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "333000000",
+        "price": 3.33
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "372000000",
+        "price": 3.72
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "356000000",
+        "price": 3.56
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "344000000",
+        "price": 3.44
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "389000000",
+        "price": 3.89
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "421000000",
+        "price": 4.21
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "397000000",
+        "price": 3.97
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "453000000",
+        "price": 4.53
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "459000000",
+        "price": 4.59
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "477000000",
+        "price": 4.77
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "459000000",
+        "price": 4.59
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "458000000",
+        "price": 4.58
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "461000000",
+        "price": 4.61
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "470000000",
+        "price": 4.7
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "467000000",
+        "price": 4.67
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "431000000",
+        "price": 4.31
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "405000000",
+        "price": 4.05
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "412000000",
+        "price": 4.12
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "411000000",
+        "price": 4.11
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "413000000",
+        "price": 4.13
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "408000000",
+        "price": 4.08
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "407000000",
+        "price": 4.07
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "421000000",
+        "price": 4.21
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "417000000",
+        "price": 4.17
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "415000000",
+        "price": 4.15
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "413000000",
+        "price": 4.13
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "426000000",
+        "price": 4.26
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "422000000",
+        "price": 4.22
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "412000000",
+        "price": 4.12
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "411000000",
+        "price": 4.11
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "408000000",
+        "price": 4.08
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "410000000",
+        "price": 4.1
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "416000000",
+        "price": 4.16
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "429000000",
+        "price": 4.29
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "443000000",
+        "price": 4.43
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "481000000",
+        "price": 4.81
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "485000000",
+        "price": 4.85
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "483000000",
+        "price": 4.83
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "482000000",
+        "price": 4.82
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "495000000",
+        "price": 4.95
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "521000000",
+        "price": 5.21
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "505000000",
+        "price": 5.05
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "501000000",
+        "price": 5.01
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "502000000",
+        "price": 5.02
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "503000000",
+        "price": 5.03
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "512000000",
+        "price": 5.12
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "517000000",
+        "price": 5.17
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "533000000",
+        "price": 5.33
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "522000000",
+        "price": 5.22
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "529000000",
+        "price": 5.29
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "522000000",
+        "price": 5.22
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "493000000",
+        "price": 4.93
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "409000000",
+        "price": 4.09
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "386000000",
+        "price": 3.86
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "420000000",
+        "price": 4.2
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "499000000",
+        "price": 4.99
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "508000000",
+        "price": 5.08
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "522000000",
+        "price": 5.22
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "534000000",
+        "price": 5.34
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "568000000",
+        "price": 5.68
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "573000000",
+        "price": 5.73
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "582000000",
+        "price": 5.82
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "582000000",
+        "price": 5.82
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "583000000",
+        "price": 5.83
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "595000000",
+        "price": 5.95
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "591000000",
+        "price": 5.91
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "571000000",
+        "price": 5.71
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "572000000",
+        "price": 5.72
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "534000000",
+        "price": 5.34
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "527000000",
+        "price": 5.27
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "531000000",
+        "price": 5.31
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "570000000",
+        "price": 5.7
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "599000000",
+        "price": 5.99
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "611000000",
+        "price": 6.11
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "610000000",
+        "price": 6.1
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "599000000",
+        "price": 5.99
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "570000000",
+        "price": 5.7
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "545000000",
+        "price": 5.45
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "531000000",
+        "price": 5.31
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "531000000",
+        "price": 5.31
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "515000000",
+        "price": 5.15
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "495000000",
+        "price": 4.95
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "466000000",
+        "price": 4.66
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "455000000",
+        "price": 4.55
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "479000000",
+        "price": 4.79
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "461000000",
+        "price": 4.61
+      },
+      {
+        "symbol": "B200",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "455000000",
+        "price": 4.55
+      }
+    ],
+    "A100 SXM4": [
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "80000000",
+        "price": 0.8
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "81000000",
+        "price": 0.81
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "82000000",
+        "price": 0.82
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "82000000",
+        "price": 0.82
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "83000000",
+        "price": 0.83
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "84000000",
+        "price": 0.84
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "83000000",
+        "price": 0.83
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "84000000",
+        "price": 0.84
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "84000000",
+        "price": 0.84
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "84000000",
+        "price": 0.84
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "89000000",
+        "price": 0.89
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "89000000",
+        "price": 0.89
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "93000000",
+        "price": 0.93
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "92000000",
+        "price": 0.92
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "92000000",
+        "price": 0.92
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "93000000",
+        "price": 0.93
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "93000000",
+        "price": 0.93
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "97000000",
+        "price": 0.97
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "98000000",
+        "price": 0.98
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "99000000",
+        "price": 0.99
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "102000000",
+        "price": 1.02
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "110000000",
+        "price": 1.1
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "112000000",
+        "price": 1.12
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "114000000",
+        "price": 1.14
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "114000000",
+        "price": 1.14
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "111000000",
+        "price": 1.11
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "117000000",
+        "price": 1.17
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "112000000",
+        "price": 1.12
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "112000000",
+        "price": 1.12
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "111000000",
+        "price": 1.11
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "114000000",
+        "price": 1.14
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "120000000",
+        "price": 1.2
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "115000000",
+        "price": 1.15
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "118000000",
+        "price": 1.18
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "121000000",
+        "price": 1.21
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "124000000",
+        "price": 1.24
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "127000000",
+        "price": 1.27
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "127000000",
+        "price": 1.27
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "130000000",
+        "price": 1.3
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "134000000",
+        "price": 1.34
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "134000000",
+        "price": 1.34
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "128000000",
+        "price": 1.28
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "126000000",
+        "price": 1.26
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "124000000",
+        "price": 1.24
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "124000000",
+        "price": 1.24
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "125000000",
+        "price": 1.25
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "129000000",
+        "price": 1.29
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "131000000",
+        "price": 1.31
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "130000000",
+        "price": 1.3
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "130000000",
+        "price": 1.3
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "130000000",
+        "price": 1.3
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "127000000",
+        "price": 1.27
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "122000000",
+        "price": 1.22
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "123000000",
+        "price": 1.23
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "121000000",
+        "price": 1.21
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "A100 SXM4",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      }
+    ],
+    "RTX 5090": [
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "45000000",
+        "price": 0.45
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "49000000",
+        "price": 0.49
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "49000000",
+        "price": 0.49
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "49000000",
+        "price": 0.49
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "45000000",
+        "price": 0.45
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "46000000",
+        "price": 0.46
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "47000000",
+        "price": 0.47
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "48000000",
+        "price": 0.48
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "49000000",
+        "price": 0.49
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "51000000",
+        "price": 0.51
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "53000000",
+        "price": 0.53
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "53000000",
+        "price": 0.53
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "55000000",
+        "price": 0.55
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "59000000",
+        "price": 0.59
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "60000000",
+        "price": 0.6
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "62000000",
+        "price": 0.62
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "66000000",
+        "price": 0.66
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "70000000",
+        "price": 0.7
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "77000000",
+        "price": 0.77
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "82000000",
+        "price": 0.82
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "85000000",
+        "price": 0.85
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "85000000",
+        "price": 0.85
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "86000000",
+        "price": 0.86
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "86000000",
+        "price": 0.86
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "97000000",
+        "price": 0.97
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "116000000",
+        "price": 1.16
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "132000000",
+        "price": 1.32
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "123000000",
+        "price": 1.23
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "110000000",
+        "price": 1.1
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "113000000",
+        "price": 1.13
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "99000000",
+        "price": 0.99
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "84000000",
+        "price": 0.84
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "82000000",
+        "price": 0.82
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "77000000",
+        "price": 0.77
+      },
+      {
+        "symbol": "RTX 5090",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "74000000",
+        "price": 0.74
+      }
+    ],
+    "RTX PRO 6000 WS": [
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1771794000,
+        "timestamp": "2026-02-22T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1771880400,
+        "timestamp": "2026-02-23T21:00:00.000Z",
+        "priceScaled": "86000000",
+        "price": 0.86
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1771966800,
+        "timestamp": "2026-02-24T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772053200,
+        "timestamp": "2026-02-25T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772139600,
+        "timestamp": "2026-02-26T21:00:00.000Z",
+        "priceScaled": "89000000",
+        "price": 0.89
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772226000,
+        "timestamp": "2026-02-27T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772312400,
+        "timestamp": "2026-02-28T21:00:00.000Z",
+        "priceScaled": "85000000",
+        "price": 0.85
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772398800,
+        "timestamp": "2026-03-01T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772485200,
+        "timestamp": "2026-03-02T21:00:00.000Z",
+        "priceScaled": "87000000",
+        "price": 0.87
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772571600,
+        "timestamp": "2026-03-03T21:00:00.000Z",
+        "priceScaled": "88000000",
+        "price": 0.88
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772658000,
+        "timestamp": "2026-03-04T21:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772744400,
+        "timestamp": "2026-03-05T21:00:00.000Z",
+        "priceScaled": "90000000",
+        "price": 0.9
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772830800,
+        "timestamp": "2026-03-06T21:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1772917200,
+        "timestamp": "2026-03-07T21:00:00.000Z",
+        "priceScaled": "92000000",
+        "price": 0.92
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773000000,
+        "timestamp": "2026-03-08T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773086400,
+        "timestamp": "2026-03-09T20:00:00.000Z",
+        "priceScaled": "93000000",
+        "price": 0.93
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773172800,
+        "timestamp": "2026-03-10T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773259200,
+        "timestamp": "2026-03-11T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773345600,
+        "timestamp": "2026-03-12T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773432000,
+        "timestamp": "2026-03-13T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773518400,
+        "timestamp": "2026-03-14T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773604800,
+        "timestamp": "2026-03-15T20:00:00.000Z",
+        "priceScaled": "95000000",
+        "price": 0.95
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773691200,
+        "timestamp": "2026-03-16T20:00:00.000Z",
+        "priceScaled": "94000000",
+        "price": 0.94
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773777600,
+        "timestamp": "2026-03-17T20:00:00.000Z",
+        "priceScaled": "91000000",
+        "price": 0.91
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773864000,
+        "timestamp": "2026-03-18T20:00:00.000Z",
+        "priceScaled": "93000000",
+        "price": 0.93
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1773950400,
+        "timestamp": "2026-03-19T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774036800,
+        "timestamp": "2026-03-20T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774123200,
+        "timestamp": "2026-03-21T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774209600,
+        "timestamp": "2026-03-22T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774296000,
+        "timestamp": "2026-03-23T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774382400,
+        "timestamp": "2026-03-24T20:00:00.000Z",
+        "priceScaled": "98000000",
+        "price": 0.98
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774468800,
+        "timestamp": "2026-03-25T20:00:00.000Z",
+        "priceScaled": "97000000",
+        "price": 0.97
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774555200,
+        "timestamp": "2026-03-26T20:00:00.000Z",
+        "priceScaled": "96000000",
+        "price": 0.96
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774641600,
+        "timestamp": "2026-03-27T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774728000,
+        "timestamp": "2026-03-28T20:00:00.000Z",
+        "priceScaled": "98000000",
+        "price": 0.98
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774814400,
+        "timestamp": "2026-03-29T20:00:00.000Z",
+        "priceScaled": "97000000",
+        "price": 0.97
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774900800,
+        "timestamp": "2026-03-30T20:00:00.000Z",
+        "priceScaled": "98000000",
+        "price": 0.98
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1774987200,
+        "timestamp": "2026-03-31T20:00:00.000Z",
+        "priceScaled": "98000000",
+        "price": 0.98
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775073600,
+        "timestamp": "2026-04-01T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775160000,
+        "timestamp": "2026-04-02T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775246400,
+        "timestamp": "2026-04-03T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775332800,
+        "timestamp": "2026-04-04T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775419200,
+        "timestamp": "2026-04-05T20:00:00.000Z",
+        "priceScaled": "100000000",
+        "price": 1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775505600,
+        "timestamp": "2026-04-06T20:00:00.000Z",
+        "priceScaled": "101000000",
+        "price": 1.01
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775592000,
+        "timestamp": "2026-04-07T20:00:00.000Z",
+        "priceScaled": "102000000",
+        "price": 1.02
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775678400,
+        "timestamp": "2026-04-08T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775764800,
+        "timestamp": "2026-04-09T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775851200,
+        "timestamp": "2026-04-10T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1775937600,
+        "timestamp": "2026-04-11T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776024000,
+        "timestamp": "2026-04-12T20:00:00.000Z",
+        "priceScaled": "102000000",
+        "price": 1.02
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776110400,
+        "timestamp": "2026-04-13T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776196800,
+        "timestamp": "2026-04-14T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776283200,
+        "timestamp": "2026-04-15T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776369600,
+        "timestamp": "2026-04-16T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776456000,
+        "timestamp": "2026-04-17T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776542400,
+        "timestamp": "2026-04-18T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776628800,
+        "timestamp": "2026-04-19T20:00:00.000Z",
+        "priceScaled": "103000000",
+        "price": 1.03
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776715200,
+        "timestamp": "2026-04-20T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776801600,
+        "timestamp": "2026-04-21T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776888000,
+        "timestamp": "2026-04-22T20:00:00.000Z",
+        "priceScaled": "104000000",
+        "price": 1.04
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1776974400,
+        "timestamp": "2026-04-23T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777060800,
+        "timestamp": "2026-04-24T20:00:00.000Z",
+        "priceScaled": "106000000",
+        "price": 1.06
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777147200,
+        "timestamp": "2026-04-25T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777233600,
+        "timestamp": "2026-04-26T20:00:00.000Z",
+        "priceScaled": "106000000",
+        "price": 1.06
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777320000,
+        "timestamp": "2026-04-27T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777406400,
+        "timestamp": "2026-04-28T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777492800,
+        "timestamp": "2026-04-29T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777579200,
+        "timestamp": "2026-04-30T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777665600,
+        "timestamp": "2026-05-01T20:00:00.000Z",
+        "priceScaled": "107000000",
+        "price": 1.07
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777752000,
+        "timestamp": "2026-05-02T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777838400,
+        "timestamp": "2026-05-03T20:00:00.000Z",
+        "priceScaled": "105000000",
+        "price": 1.05
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1777924800,
+        "timestamp": "2026-05-04T20:00:00.000Z",
+        "priceScaled": "106000000",
+        "price": 1.06
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778011200,
+        "timestamp": "2026-05-05T20:00:00.000Z",
+        "priceScaled": "106000000",
+        "price": 1.06
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778097600,
+        "timestamp": "2026-05-06T20:00:00.000Z",
+        "priceScaled": "108000000",
+        "price": 1.08
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778184000,
+        "timestamp": "2026-05-07T20:00:00.000Z",
+        "priceScaled": "111000000",
+        "price": 1.11
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778270400,
+        "timestamp": "2026-05-08T20:00:00.000Z",
+        "priceScaled": "111000000",
+        "price": 1.11
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778356800,
+        "timestamp": "2026-05-09T20:00:00.000Z",
+        "priceScaled": "109000000",
+        "price": 1.09
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778443200,
+        "timestamp": "2026-05-10T20:00:00.000Z",
+        "priceScaled": "110000000",
+        "price": 1.1
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778529600,
+        "timestamp": "2026-05-11T20:00:00.000Z",
+        "priceScaled": "115000000",
+        "price": 1.15
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778616000,
+        "timestamp": "2026-05-12T20:00:00.000Z",
+        "priceScaled": "117000000",
+        "price": 1.17
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778702400,
+        "timestamp": "2026-05-13T20:00:00.000Z",
+        "priceScaled": "118000000",
+        "price": 1.18
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778788800,
+        "timestamp": "2026-05-14T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778875200,
+        "timestamp": "2026-05-15T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1778961600,
+        "timestamp": "2026-05-16T20:00:00.000Z",
+        "priceScaled": "117000000",
+        "price": 1.17
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779048000,
+        "timestamp": "2026-05-17T20:00:00.000Z",
+        "priceScaled": "118000000",
+        "price": 1.18
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779134400,
+        "timestamp": "2026-05-18T20:00:00.000Z",
+        "priceScaled": "120000000",
+        "price": 1.2
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779220800,
+        "timestamp": "2026-05-19T20:00:00.000Z",
+        "priceScaled": "119000000",
+        "price": 1.19
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779307200,
+        "timestamp": "2026-05-20T20:00:00.000Z",
+        "priceScaled": "120000000",
+        "price": 1.2
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779393600,
+        "timestamp": "2026-05-21T20:00:00.000Z",
+        "priceScaled": "125000000",
+        "price": 1.25
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779480000,
+        "timestamp": "2026-05-22T20:00:00.000Z",
+        "priceScaled": "131000000",
+        "price": 1.31
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779566400,
+        "timestamp": "2026-05-23T20:00:00.000Z",
+        "priceScaled": "132000000",
+        "price": 1.32
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779652800,
+        "timestamp": "2026-05-24T20:00:00.000Z",
+        "priceScaled": "136000000",
+        "price": 1.36
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779739200,
+        "timestamp": "2026-05-25T20:00:00.000Z",
+        "priceScaled": "135000000",
+        "price": 1.35
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779825600,
+        "timestamp": "2026-05-26T20:00:00.000Z",
+        "priceScaled": "131000000",
+        "price": 1.31
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779912000,
+        "timestamp": "2026-05-27T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1779998400,
+        "timestamp": "2026-05-28T20:00:00.000Z",
+        "priceScaled": "139000000",
+        "price": 1.39
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780084800,
+        "timestamp": "2026-05-29T20:00:00.000Z",
+        "priceScaled": "164000000",
+        "price": 1.64
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780171200,
+        "timestamp": "2026-05-30T20:00:00.000Z",
+        "priceScaled": "172000000",
+        "price": 1.72
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780257600,
+        "timestamp": "2026-05-31T20:00:00.000Z",
+        "priceScaled": "159000000",
+        "price": 1.59
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780344000,
+        "timestamp": "2026-06-01T20:00:00.000Z",
+        "priceScaled": "154000000",
+        "price": 1.54
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780430400,
+        "timestamp": "2026-06-02T20:00:00.000Z",
+        "priceScaled": "148000000",
+        "price": 1.48
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780516800,
+        "timestamp": "2026-06-03T20:00:00.000Z",
+        "priceScaled": "138000000",
+        "price": 1.38
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780603200,
+        "timestamp": "2026-06-04T20:00:00.000Z",
+        "priceScaled": "136000000",
+        "price": 1.36
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780689600,
+        "timestamp": "2026-06-05T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780776000,
+        "timestamp": "2026-06-06T20:00:00.000Z",
+        "priceScaled": "137000000",
+        "price": 1.37
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780862400,
+        "timestamp": "2026-06-07T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1780948800,
+        "timestamp": "2026-06-08T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1781035200,
+        "timestamp": "2026-06-09T20:00:00.000Z",
+        "priceScaled": "133000000",
+        "price": 1.33
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1781121600,
+        "timestamp": "2026-06-10T20:00:00.000Z",
+        "priceScaled": "132000000",
+        "price": 1.32
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1781208000,
+        "timestamp": "2026-06-11T20:00:00.000Z",
+        "priceScaled": "132000000",
+        "price": 1.32
+      },
+      {
+        "symbol": "RTX PRO 6000 WS",
+        "dayKey": 1781294400,
+        "timestamp": "2026-06-12T20:00:00.000Z",
+        "priceScaled": "132000000",
+        "price": 1.32
+      }
+    ]
+  }
+}
