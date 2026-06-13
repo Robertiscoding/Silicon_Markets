@@ -8,7 +8,7 @@ import {
   useReadContracts,
   useWriteContract,
 } from "wagmi";
-import { SILICON_MARKET_ABI, SILICON_MARKET_ADDRESS } from "@/lib/contracts";
+import { DEMO_MARKET_ADDRESS, SILICON_MARKET_ABI } from "@/lib/contracts";
 import { arcscanTx } from "@/lib/chain";
 import { formatUsd } from "@/lib/markets";
 
@@ -38,7 +38,7 @@ export function PayoutsView() {
   const [busyId, setBusyId] = useState<string | null>(null);
 
   const { data: count, refetch: refetchCount } = useReadContract({
-    address: SILICON_MARKET_ADDRESS,
+    address: DEMO_MARKET_ADDRESS,
     abi: SILICON_MARKET_ABI,
     functionName: "marketCount",
   });
@@ -51,7 +51,7 @@ export function PayoutsView() {
 
   const { data: marketReads, refetch: refetchMarkets } = useReadContracts({
     contracts: ids.map((i) => ({
-      address: SILICON_MARKET_ADDRESS,
+      address: DEMO_MARKET_ADDRESS,
       abi: SILICON_MARKET_ABI,
       functionName: "getMarket" as const,
       args: [BigInt(i)] as const,
@@ -61,7 +61,7 @@ export function PayoutsView() {
 
   const { data: countReads } = useReadContracts({
     contracts: ids.map((i) => ({
-      address: SILICON_MARKET_ADDRESS,
+      address: DEMO_MARKET_ADDRESS,
       abi: SILICON_MARKET_ABI,
       functionName: "forecastCount" as const,
       args: [BigInt(i)] as const,
@@ -83,7 +83,7 @@ export function PayoutsView() {
 
   const { data: forecastReads, refetch: refetchForecasts } = useReadContracts({
     contracts: pairs.map((p) => ({
-      address: SILICON_MARKET_ADDRESS,
+      address: DEMO_MARKET_ADDRESS,
       abi: SILICON_MARKET_ABI,
       functionName: "getForecast" as const,
       args: [BigInt(p.marketId), BigInt(p.forecastId)] as const,
@@ -146,7 +146,7 @@ export function PayoutsView() {
     try {
       setStatus(`Claiming ${formatUsd(r.payout)}…`);
       const hash = await writeContractAsync({
-        address: SILICON_MARKET_ADDRESS,
+        address: DEMO_MARKET_ADDRESS,
         abi: SILICON_MARKET_ABI,
         functionName: "claim",
         args: [BigInt(r.marketId), BigInt(r.forecastId)],

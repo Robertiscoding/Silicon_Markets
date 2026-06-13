@@ -10,6 +10,10 @@ export const ORNN_ORACLE_ADDRESS = (process.env.NEXT_PUBLIC_ORNN_ORACLE_ADDRESS 
 export const BUCKET_MARKET_ADDRESS = (process.env.NEXT_PUBLIC_BUCKET_MARKET_ADDRESS ??
   "0x34a8935a3429bE67cC4622BaBEb9D7934a43097c") as Address;
 
+/** Demo SiliconMarket (tradingCutoff = 0) for one-click settlement demo. */
+export const DEMO_MARKET_ADDRESS = (process.env.NEXT_PUBLIC_DEMO_MARKET_ADDRESS ??
+  "0x0000000000000000000000000000000000000000") as Address;
+
 export const USDC_ADDRESS = (process.env.NEXT_PUBLIC_USDC_ADDRESS ?? ARC_USDC_ADDRESS) as Address;
 
 export const SILICON_MARKET_ABI = [
@@ -127,6 +131,13 @@ export const SILICON_MARKET_ABI = [
     outputs: [{ name: "forecastId", type: "uint256" }],
   },
   {
+    type: "function",
+    name: "resolve",
+    stateMutability: "nonpayable",
+    inputs: [{ name: "marketId", type: "uint256" }],
+    outputs: [],
+  },
+  {
     type: "event",
     name: "ForecastLocked",
     inputs: [
@@ -137,6 +148,20 @@ export const SILICON_MARKET_ABI = [
       { name: "band", type: "uint128", indexed: false },
       { name: "stake", type: "uint128", indexed: false },
     ],
+  },
+] as const;
+
+export const ORNN_ORACLE_ABI = [
+  {
+    type: "function",
+    name: "publishPrint",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "gpuSymbol", type: "string" },
+      { name: "dayKey", type: "uint256" },
+      { name: "price", type: "uint128" },
+    ],
+    outputs: [],
   },
 ] as const;
 

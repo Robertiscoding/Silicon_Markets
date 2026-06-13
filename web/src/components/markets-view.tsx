@@ -1,10 +1,12 @@
 "use client";
 
 import { useMemo, useState, useSyncExternalStore } from "react";
-import { useReadContract } from "wagmi";
+import { useReadContract, useWatchContractEvent } from "wagmi";
 import type { PricePoint } from "@/lib/seed-history";
 import { SILICON_MARKET_ABI, SILICON_MARKET_ADDRESS } from "@/lib/contracts";
 import { GPU_SYMBOLS, rawToUsdc, type GpuSymbol } from "@/lib/markets";
+import { DemoResultModal } from "./demo-result-modal";
+import { DemoSettle, type DemoResult } from "./demo-settle";
 import { ForecastChart } from "./forecast-chart";
 import { ForecastPanel } from "./forecast-panel";
 import { MarketFeedsPanel } from "./market-feeds-panel";
@@ -52,6 +54,9 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
   const [centerBySym, setCenterBySym] = useState(initialForecast.centers);
   const [bandBySym, setBandBySym] = useState(initialForecast.bands);
 
+  const [demoResult, setDemoResult] = useState<DemoResult | null>(null);
+  const [demoPopupOpen, setDemoPopupOpen] = useState(false);
+
   const series = initialSeries[selected] ?? [];
   const spotPrice = series.at(-1)?.price ?? 0;
   const prev = series.at(-2)?.price ?? spotPrice;
@@ -69,7 +74,7 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
   });
   const marketId = marketIdLookup?.[1] ? marketIdLookup[0] : null;
 
-  const { data: marketInfo } = useReadContract({
+  const { data: marketInfo, refetch: refetchMarketInfo } = useReadContract({
     address: SILICON_MARKET_ADDRESS,
     abi: SILICON_MARKET_ABI,
     functionName: "getMarket",
@@ -77,7 +82,7 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
     query: { enabled: marketId !== null, refetchInterval: 30_000 },
   });
 
-  const { data: numForecasts } = useReadContract({
+  const { data: numForecasts, refetch: refetchNumForecasts } = useReadContract({
     address: SILICON_MARKET_ADDRESS,
     abi: SILICON_MARKET_ABI,
     functionName: "forecastCount",
@@ -85,49 +90,77 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
     query: { enabled: marketId !== null, refetchInterval: 30_000 },
   });
 
+  useWatchContractEvent({
+    address: SILICON_MARKET_ADDRESS,
+    abi: SILICON_MARKET_ABI,
+    eventName: "ForecastLocked",
+    args: marketId !== null ? { marketId } : undefined,
+    enabled: marketId !== null,
+    onLogs: () => {
+      refetchMarketInfo();
+      refetchNumForecasts();
+    },
+  });
+
   const volumeUsd = marketInfo ? rawToUsdc(marketInfo.totalStake) : null;
   const forecastCount = numForecasts !== undefined ? Number(numForecasts) : null;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)_340px] gap-4 max-w-[1400px] mx-auto w-full">
-      <aside className="min-h-[560px] order-2 lg:order-none">
-        <MarketFeedsPanel series={initialSeries} selected={selected} onSelect={setSelected} />
-      </aside>
+    <>
+      <div className="grid grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)_340px] gap-4 max-w-[1400px] mx-auto w-full">
+        <aside className="min-h-[560px] order-2 lg:order-none">
+          <MarketFeedsPanel series={initialSeries} selected={selected} onSelect={setSelected} />
+        </aside>
 
-      <section className="min-w-0 min-h-[560px] order-1 lg:order-none">
-        <ForecastChart
-          symbol={selected}
-          history={series}
-          forecastCenter={forecastCenter}
-          forecastBand={forecastBand}
-          settlementTs={settlementTs}
-          nowTs={now || (series.at(-1)?.ts ?? settlementTs)}
-          windowDays={windowDays}
-          spotChangePct={Number.isFinite(changePct) ? changePct : 0}
-          spotChangeAbs={Number.isFinite(changeAbs) ? changeAbs : 0}
-          volumeUsd={volumeUsd}
-          forecastCount={forecastCount}
-          onWindowChange={setWindowDays}
-          onForecastChange={(center) =>
-            setCenterBySym((prev) => ({ ...prev, [selected]: center }))
-          }
-        />
-      </section>
+        <section className="min-w-0 min-h-[560px] order-1 lg:order-none">
+          <ForecastChart
+            symbol={selected}
+            history={series}
+            forecastCenter={forecastCenter}
+            forecastBand={forecastBand}
+            settlementTs={settlementTs}
+            nowTs={now || (series.at(-1)?.ts ?? settlementTs)}
+            windowDays={windowDays}
+            spotChangePct={Number.isFinite(changePct) ? changePct : 0}
+            spotChangeAbs={Number.isFinite(changeAbs) ? changeAbs : 0}
+            volumeUsd={volumeUsd}
+            forecastCount={forecastCount}
+            demoSettlePrice={demoResult?.settlePrice ?? null}
+            onWindowChange={setWindowDays}
+            onForecastChange={(center) =>
+              setCenterBySym((prev) => ({ ...prev, [selected]: center }))
+            }
+          />
+        </section>
 
-      <aside className="min-h-[560px] order-3">
-        <ForecastPanel
-          symbol={selected}
-          spotPrice={spotPrice}
-          forecastCenter={forecastCenter}
-          forecastBand={forecastBand}
-          stakeUsd={stake}
-          settlementTs={settlementTs}
-          nowTs={now}
-          marketId={marketId}
-          onStakeChange={setStake}
-          onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
-        />
-      </aside>
-    </div>
+        <aside className="min-h-[560px] order-3">
+          <ForecastPanel
+            symbol={selected}
+            spotPrice={spotPrice}
+            forecastCenter={forecastCenter}
+            forecastBand={forecastBand}
+            stakeUsd={stake}
+            settlementTs={settlementTs}
+            nowTs={now}
+            marketId={marketId}
+            onStakeChange={setStake}
+            onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
+          />
+        </aside>
+      </div>
+
+      <DemoSettle
+        symbol={selected}
+        settlementTs={settlementTs}
+        onResult={(r) => {
+          setDemoResult(r);
+          setDemoPopupOpen(true);
+        }}
+      />
+      <DemoResultModal
+        result={demoPopupOpen ? demoResult : null}
+        onClose={() => setDemoPopupOpen(false)}
+      />
+    </>
   );
 }
