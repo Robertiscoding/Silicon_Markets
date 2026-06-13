@@ -126,6 +126,18 @@ export const SILICON_MARKET_ABI = [
     ],
     outputs: [{ name: "forecastId", type: "uint256" }],
   },
+  {
+    type: "event",
+    name: "ForecastLocked",
+    inputs: [
+      { name: "marketId", type: "uint256", indexed: true },
+      { name: "forecastId", type: "uint256", indexed: true },
+      { name: "user", type: "address", indexed: true },
+      { name: "center", type: "int128", indexed: false },
+      { name: "band", type: "uint128", indexed: false },
+      { name: "stake", type: "uint128", indexed: false },
+    ],
+  },
 ] as const;
 
 export const ERC20_ABI = [

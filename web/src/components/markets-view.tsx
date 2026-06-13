@@ -126,7 +126,6 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
           marketId={marketId}
           onStakeChange={setStake}
           onBandChange={(band) => setBandBySym((prev) => ({ ...prev, [selected]: band }))}
-          onCenterChange={(center) => setCenterBySym((prev) => ({ ...prev, [selected]: center }))}
         />
       </aside>
     </div>
