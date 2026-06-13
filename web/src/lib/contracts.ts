@@ -15,6 +15,16 @@ export const USDC_ADDRESS = (process.env.NEXT_PUBLIC_USDC_ADDRESS ?? ARC_USDC_AD
 export const SILICON_MARKET_ABI = [
   {
     type: "function",
+    name: "createMarket",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "gpuSymbol", type: "string" },
+      { name: "settlementTs", type: "uint64" },
+    ],
+    outputs: [{ name: "marketId", type: "uint256" }],
+  },
+  {
+    type: "function",
     name: "marketIdFor",
     stateMutability: "view",
     inputs: [
@@ -54,6 +64,16 @@ export const SILICON_MARKET_ABI = [
     stateMutability: "view",
     inputs: [{ name: "marketId", type: "uint256" }],
     outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "impliedOddsBps",
+    stateMutability: "view",
+    inputs: [
+      { name: "marketId", type: "uint256" },
+      { name: "hypotheticalPrice", type: "uint128" },
+    ],
+    outputs: [{ name: "", type: "uint16" }],
   },
   {
     type: "function",
