@@ -12,6 +12,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+Copy `web/.env.example` to `web/.env` and set server keys locally (never commit):
+
+- `DEMO_PRIVATE_KEY` — oracle updater key for one-click demo settlement
+- `FUNDER_PRIVATE_KEY` — Circle Send faucet for test USDC
+
 ## Contracts
 
 See [`contracts/README.md`](contracts/README.md). Arc Testnet deployment addresses are in [`contracts/deployments/arc.json`](contracts/deployments/arc.json).
