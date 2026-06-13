@@ -38,3 +38,8 @@ export async function loadAllSeries(): Promise<Record<GpuSymbol, NormalizedPrint
     GPU_SYMBOLS.map((s) => [s, (all.symbols[s] ?? []) as NormalizedPrint[]]),
   ) as Record<GpuSymbol, NormalizedPrint[]>;
 }
+
+export async function loadSymbol(symbol: GpuSymbol): Promise<NormalizedPrint[]> {
+  const { symbols } = await loadAllPrints();
+  return (symbols[symbol] ?? []) as NormalizedPrint[];
+}
