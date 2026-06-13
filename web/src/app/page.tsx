@@ -1,11 +1,13 @@
 import { MarketsView } from "@/components/markets-view";
 import { configuredSettlementTs } from "@/lib/markets";
-import { seedAllSeries } from "@/lib/seed-history";
+import { loadMarketSeries } from "@/lib/load-series";
 
-export default function Home() {
+export default async function Home() {
+  const series = await loadMarketSeries();
+
   return (
     <main style={{ padding: 24 }}>
-      <MarketsView initialSeries={seedAllSeries()} settlementTs={configuredSettlementTs()} />
+      <MarketsView initialSeries={series} settlementTs={configuredSettlementTs()} />
     </main>
   );
 }
