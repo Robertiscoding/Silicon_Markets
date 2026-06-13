@@ -13,6 +13,7 @@ import {
   type GpuSymbol,
 } from "@/lib/markets";
 import { ForecastPanel } from "./forecast-panel";
+import { MarketFeedsPanel } from "./market-feeds-panel";
 import { SpotChart } from "./spot-chart";
 
 interface MarketsViewProps {
@@ -164,38 +165,11 @@ export function MarketsView({ initialSeries, settlementTs }: MarketsViewProps) {
         onCenterChange={(center) => setCenterBySym((prev) => ({ ...prev, [selected]: center }))}
       />
 
-      <section>
-        <h2 style={{ marginTop: 0 }}>All markets</h2>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {GPU_SYMBOLS.map((symbol) => {
-            const price = initialSeries[symbol]?.at(-1)?.price ?? 0;
-            const active = symbol === selected;
-            return (
-              <li key={symbol}>
-                <button
-                  type="button"
-                  onClick={() => setSelected(symbol)}
-                  style={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    padding: "10px 0",
-                    border: "none",
-                    borderBottom: "1px solid black",
-                    background: active ? "#eee" : "white",
-                    color: "black",
-                    cursor: "pointer",
-                    textAlign: "left",
-                  }}
-                >
-                  <span>{symbol}</span>
-                  <span>{formatHr(price)}</span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
+      <MarketFeedsPanel
+        series={initialSeries}
+        selected={selected}
+        onSelect={setSelected}
+      />
     </div>
   );
 }

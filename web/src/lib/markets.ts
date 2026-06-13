@@ -9,6 +9,15 @@ export const GPU_SYMBOLS = [
 
 export type GpuSymbol = (typeof GPU_SYMBOLS)[number];
 
+export const SHORT_SYMBOL: Record<GpuSymbol, string> = {
+  "RTX 5090": "RTX 5090",
+  "H100 SXM": "H100",
+  H200: "H200",
+  B200: "B200",
+  "A100 SXM4": "A100",
+  "RTX PRO 6000 WS": "RTX 6000",
+};
+
 export function formatUsd(value: number, fractionDigits = 2): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
