@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { DepositButton } from "./deposit-button";
 import { Logo } from "./logo";
 import { WalletButton } from "./wallet-button";
 
@@ -51,6 +52,7 @@ export function SiteHeader() {
         })}
       </nav>
       <div className="flex items-center gap-3">
+        <DepositButton />
         <WalletButton />
       </div>
     </header>

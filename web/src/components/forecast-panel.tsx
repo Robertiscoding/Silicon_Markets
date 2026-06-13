@@ -61,10 +61,11 @@ export function ForecastPanel({
   const publicClient = usePublicClient();
   const [status, setStatus] = useState("");
   const [lastTxHash, setLastTxHash] = useState<string | null>(null);
+  const [funding, setFunding] = useState(false);
 
   const stakeRaw = useMemo(() => usdcToRaw(stakeUsd), [stakeUsd]);
 
-  const { data: usdcBalance } = useReadContract({
+  const { data: usdcBalance, refetch: refetchBalance } = useReadContract({
     address: USDC_ADDRESS,
     abi: ERC20_ABI,
     functionName: "balanceOf",
@@ -103,6 +104,27 @@ export function ForecastPanel({
   const tradingClosed = nowTs > 0 && nowTs >= settlementTs - 300;
   const lockedOut =
     !address || stakeUsd <= 0 || stakeUsd > usdcAvailable || txPending || tradingClosed;
+
+  async function handleFund() {
+    if (!address || funding) return;
+    setFunding(true);
+    setStatus("Sending test USDC via Circle App Kit…");
+    try {
+      const res = await fetch("/api/fund", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ address }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
+      setStatus(`Funded $${data.amount} USDC · tx ${String(data.txHash ?? "").slice(0, 10)}…`);
+      refetchBalance();
+    } catch (err: unknown) {
+      setStatus(`Funding failed: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setFunding(false);
+    }
+  }
 
   async function handleLock() {
     if (!address || !publicClient) return;
@@ -223,10 +245,25 @@ export function ForecastPanel({
             ? "Connect wallet to lock"
             : tradingClosed
               ? "Trading closed"
-              : txPending
-                ? "Confirming…"
-                : "Lock forecast"}
+              : stakeUsd > usdcAvailable
+                ? "Insufficient USDC"
+                : txPending
+                  ? "Confirming…"
+                  : marketId === null
+                    ? "Create market & lock"
+                    : "Lock forecast"}
         </button>
+
+        {address && stakeUsd > usdcAvailable && !tradingClosed ? (
+          <button
+            type="button"
+            disabled={funding}
+            onClick={handleFund}
+            className="btn-outline w-full py-2 text-[12px] -mt-2"
+          >
+            {funding ? "Sending…" : "Get $1 test USDC · Circle App Kit"}
+          </button>
+        ) : null}
 
         {status ? (
           <p className="text-[11px] text-muted m-0">
