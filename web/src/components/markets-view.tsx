@@ -15,6 +15,8 @@ export function MarketsView({ initialSeries }: MarketsViewProps) {
 
   const series = initialSeries[selected] ?? [];
   const spot = series.at(-1)?.price ?? 0;
+  const prior = series.at(-2)?.price ?? spot;
+  const changePct = prior ? ((spot - prior) / prior) * 100 : 0;
 
   const visible = useMemo(() => {
     if (windowDays >= 365) return series;
@@ -28,7 +30,13 @@ export function MarketsView({ initialSeries }: MarketsViewProps) {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
           <div>
             <h1 style={{ margin: "0 0 4px" }}>{selected}</h1>
-            <p style={{ margin: 0 }}>{formatHr(spot)}</p>
+            <p style={{ margin: 0, display: "flex", gap: 12, alignItems: "baseline" }}>
+              <span>{formatHr(spot)}</span>
+              <span style={{ fontSize: 13 }}>
+                {changePct >= 0 ? "+" : ""}
+                {changePct.toFixed(2)}% 24h
+              </span>
+            </p>
           </div>
           <div style={{ display: "flex", gap: 8 }}>
             {[1, 7, 30, 90].map((days) => (
